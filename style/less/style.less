@@ -2,6 +2,8 @@
 @import "../font-awesome-4.6.3/less/font-awesome.less";
 @import "landing-page.less";
 
+@teal: #00a3a6;
+
 .intro-header {
     background: url(../../build/images/albuquerque2.png) no-repeat center center;
 	background-size:cover;
@@ -16,4 +18,29 @@ p.contact-social-icons i {
 	font-size:1.5em;
 	padding-right:7px;
 	color:#333;
+}
+
+.services-container {
+	margin-top:80px;
+	
+	h2, p {text-align:center;font-weight:normal;}
+	i.fa {
+		font-size: 2.5em;
+		color: @teal;
+		border: 1px solid @teal;
+		border-radius: 120px;
+		width: 2.5em;
+		line-height: 2.5em;
+		transition: background-color 0.8s ease;
+	}
+	i.fa:hover {
+		background-color:@teal;
+		color:white;
+	}
+}
+.loading {
+	position: fixed;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
 }

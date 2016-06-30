@@ -6,11 +6,15 @@
 <title>webdevabq.github.io</title>
 </head>
 
-<body ng-app="tutorialWebApp">
+<body ng-app="siteWebdevabq">
 
 <div ng-include="'templates/header.html'"></div>
+	<div class="loading" ng-show="loader.loading">
+		<i class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></i>
+		<span class="sr-only">Loading...</span>
+	</div>
 <div ng-view></div>
-<div ng-include="'templates/footer.html'"></div>		
+<div ng-include="'templates/footer.html'"></div>
 
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-route.min.js"></script>
