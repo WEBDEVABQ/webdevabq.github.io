@@ -1,0 +1,119 @@
+	<div class="banner" style="margin-top:40px;">
+		<div class="container">
+			<h1 style="padding:15px 0;text-align:center;color:teal;">Portfolio</h1>
+		</div>
+	</div>
+	<!--<div style="background:teal;">
+		<div class="container" style="padding:30px 0;">
+			<div class="row">
+				<div class="col-md-3"><select class="form-control"><option>Filter by Client</option></select></div>
+				<div class="col-md-3">
+					<select class="form-control">
+						<option>Filter by Year</option>
+						<option>2016</option>
+						<option>2015</option>
+						<option>2014</option>
+						<option>2013</option>
+						<option>2012</option>
+						<option>2011</option>
+						<option>2010</option>
+						<option>2009</option>
+						<option>2008</option>
+					</select>
+				</div>
+				<div class="col-md-3">
+					<select class="form-control">
+						<option>Filter by Skill</option>
+						<option>WordPress</option>
+						<option>Bootstrap</option>
+						<option>GitHub</option>
+					</select>
+				</div>
+				<div class="col-md-3"><button class="form-control btn btn-default"><i class="fa fa-filter"></i> Filter</button></div>
+			</div>
+		</div>
+	</div>-->
+    <!--<div class="content-section-a">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Marmon Designs</h2>
+					<p class="lead"><a href="http://marmondesigns.com">marmondesigns.com</a></p>
+					<p class="lead"><em><strong>Role:</strong> Project Manager and Web Developer.<br>January 2015 - Present.</em></p>
+					<p class="lead"><strong>Skills Required: </strong>HTML, CSS, PHP, MySQL, jQuery, WordPress, Project Management, Web and Mobile Design</p>
+					<p class="lead"><strong>Client Challenges:</strong> David runs a web design and development firm in Los Angeles, California but is more comfortable making sales and communicating with the clients, so he needed someone to step in and take charge of project management, handling of sub-contractors, and making sure all deliverables were high quality and on time.</p>
+					<p class="lead"><strong>Solutions Used:</strong></p>
+					<ul class="lead">
+						<li>Managed web development process from client specifications to deployment of final website including testing and debugging.</li>
+						<li>Helped to hire contractors and communicate client website needs to contractors and ensure that work was completed in a timely manner.</li>
+						<li>Provided quality control and effective communication with the team.</li>
+						<li>Handled website transfers and domain, hosting, and WordPress set up, configuration, and maintenance.</li>
+						<li>Was also sub-contracted on certain projects to provide fast, quality web programming work.</li>
+					</ul>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <p><img class="img-responsive" src="build/images/ourschool.png" alt=""></p>
+					<p class="lead"><a href="http://ourschool.today">OurSchool.Today</a></p>
+					<p>AFX</p>
+                </div>
+            </div>
+
+        </div>-->
+        <!-- /.container -->
+
+    <!--</div>-->
+    <!-- /.content-section-a -->
+
+  
+    <div class="content-section-b" ng-repeat="project in projects | orderBy: '-year'">
+
+        <div class="container">
+
+            <div class="row">
+				<div class="col-lg-7">
+                    <img class="img-responsive" ng-src="build/images/{{project.image}}" alt="{{project.name}}">
+                </div>
+                <div class="col-lg-4">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">{{project.name}}</h2>
+                    <p class="lead"><a href="{{project.url}}" target="_blank">{{project.url}}</a></p>
+					<p class="lead">
+						<strong>Client: </strong>{{project.client}}<br>
+						<strong>Role: </strong>{{project.role}}<br>
+						<strong>Year(s): </strong>{{project.year}}
+					</p>
+					<p class="lead"><strong>Skills: </strong>{{project.skills}}</p>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+
+    <!--<div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Mana Digital</h2>
+                    <p class="lead"><a href="http://manadigitalanddesign.com" target="_blank">Mana Digital</a> is the 2D and 3D art studio of the local Albuquerque artist, Dennis Harroun. Built with WordPress.</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="build/images/manadigital.png" alt="">
+                </div>
+            </div>
+
+        </div>-->
+        <!-- /.container -->
+
+    <!--</div>-->
+    <!-- /.content-section-a -->
