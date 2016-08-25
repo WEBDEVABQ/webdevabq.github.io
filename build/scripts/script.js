@@ -17,6 +17,7 @@ $routeProvider
 .when("/projects", {templateUrl: "partials/portfolio.html", controller: "PageCtrl"})
 .when("/services", {templateUrl: "partials/services.html", controller: "PageCtrl"})
 .when("/contact", {templateUrl: "partials/contact.html", controller: "PageCtrl"})
+.when("/payment", {templateUrl: "partials/payment.html", controller: "PageCtrl"})
 //.when("/faq", {templateUrl: "partials/faq.html", controller: "PageCtrl"})
 /* etc routes to other pages */
 // Blog
